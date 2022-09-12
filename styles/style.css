@@ -5,7 +5,7 @@
     font-family: 'Merriweather', serif; 
 }
 .header {
-    min-height: 100vh;
+    min-height: 50vh;
     width: 100%;
     background-image: url("../images/bluerose.jpg"); 
     background-position: center;
@@ -40,8 +40,8 @@ nav img {
     padding: 8px 12px;
     position: relative;
     border-style: dashed;
-    border-color: aquamarine;
-    background-color: #483a3d;
+    border-color: #000000;
+    background-color:#b69d30
 }
 
 .menu-links ul li a{ /*Menubar color for all*/
@@ -66,7 +66,6 @@ nav img {
 /* welcome greetings */
 
 .greetings {
-    width: 90%;
     color: white;
     position: absolute;
     top: 50%;
@@ -75,7 +74,7 @@ nav img {
     text-align: center ;
 }
 .greetings h1 { 
-    font-size: 100px;
+    font-size: 60px;
     font-family: 'Dancing Script', cursive;
 }
 .greetings p {
@@ -85,7 +84,7 @@ nav img {
     font-family: 'Dancing Script', cursive;
 }
 
-/* START EDU CONTENT */
+/* START SKILLS CONTENT */
 .edu-content {
     width: 50%;
     color: white;
@@ -105,9 +104,9 @@ nav img {
     color: white;
     font-family: 'Dancing Script', cursive;
 }
-/* END WORK CONTENT */
+/* END SKILLS CONTENT */
 
-/* START WORK CONTENT */
+/* START PORTFOLIO CONTENT */
 .work-content {
     width: 50%;
     color: white;
@@ -127,7 +126,7 @@ nav img {
     color: white;
     font-family: 'Dancing Script', cursive;
 }
-/* END WORK CONTENT */
+/* END PORTFOLIO CONTENT */
 
 /* START CONTACT CONTENT */
 .contact-content {
@@ -206,14 +205,13 @@ nav .fa {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 90px;
 }
 h1 {
     font-size: 36px;
     font-weight: 600;
     
 }
-
 p {
     color: black;
     font-size: 14px;
@@ -229,7 +227,7 @@ p {
 }
 .personal-col {
     flex-basis: 31%;
-    background: slateblue;
+    background: #5068e0;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
