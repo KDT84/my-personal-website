@@ -35,11 +35,11 @@ nav img {
     position: relative;
     border-style: dashed;
     border-color: aquamarine;
-    background-color: #ed1550;
+    background-color: #483a3d;
 }
 
 .menu-links ul li a{ /*Menubar color for all*/
-    color: #483a3d;
+    color: white;
     text-decoration: none;
     font-size: 13px;
 }
