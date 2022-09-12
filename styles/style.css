@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* menu font */
+    font-family: 'Merriweather', serif; 
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("/images/bluerose.jpg"); 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/* display for the MENU*/  
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+/* display for the logo*/
+
+nav img {
+    width: 150px;
+}
+.menu-links {
+    flex: 1;
+    text-align: right;
+}
+.menu-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    border-style: dashed;
+    border-color: aquamarine;
+    background-color: #ed1550;
+}
+
+.menu-links ul li a{ /*Menubar color for all*/
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+/* menu underline */
+.menu-links ul li::after {
+    content: '';    
+    width: 0%; 
+    height: 2px;
+    background: brown;
+    display: block;
+    margin: auto;
+    transition: 0.5s; 
+} 
+/* menu hover */
+.menu-links ul li:hover::after {
+    width: 100%;
+}
+/* welcome greetings */
+
+.greetings {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center ;
+}
+.greetings h1 { 
+    font-size: 62px;
+    font-family: 'Dancing Script', cursive;
+}
+.greetings p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* START EDU CONTENT */
+.edu-content {
+    width: 50%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center ;
+}
+.edu-content h1 { 
+    font-size: 50px;
+    font-family: 'Arial', cursive;
+}
+.edu-content p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+/* END WORK CONTENT */
+
+/* START WORK CONTENT */
+.work-content {
+    width: 50%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center ;
+}
+.work-content h1 { 
+    font-size: 50px;
+    font-family: 'Arial', cursive;
+}
+.work-content p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+/* END WORK CONTENT */
+
+/* START CONTACT CONTENT */
+.contact-content {
+    width: 50%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center ;
+}
+.contact-content h1 { 
+    font-size: 50px;
+    font-family: 'Arial', cursive;
+}
+.contact-content p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+/* END CONTACT CONTENT */
+
+.intro-button {
+    display: inline-block;
+    text-decoration: rgb(196, 173, 255);
+    color:white ;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.intro-button:hover {
+    border: 1px solid pink;
+    background:yellow;
+    transition: 1s;
+}
+nav .fa { /*hiding the menu icom in bigger screens */
+    display: none;
+}
+/* for smaller screens */
+@media(max-width: 700px) {
+    .greetings h1 {
+        font-size: 20px;
+    }
+    .menu-links ul li {
+        display: block;
+    } 
+    .menu-links {
+    position: absolute;
+    background: white;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px; /* if you want to hide the menu just change it to -200px */
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+    }
+}   
+nav .fa {
+    display: block;
+    color: red;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.menu-links ul {
+    padding: 30px;
+}
+/* Personal Details */
+
+.personal {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    
+}
+p {
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px
+}
+/*bottom view */
+.row {
+     margin-top: 5%;
+     display: flex;
+     justify-content: space-between;
+}
+.personal-col {
+    flex-basis: 31%;
+    background: slateblue;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.personal-col:hover{
+    box-shadow: 0 0 100px 0px blue;
+}
+@media(max-width: 700px) {
+    .row{
+        flex-direction: column;
+    }
+}
+/* Coutries */
+
+.travel {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.travel-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden; 
+}
+.travel-col img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover {
+    background: blueviolet;
+}
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 40px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+/* Career */
+
+.career {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.career-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.career-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.career-col p{
+    padding: 0;
+} 
+.career-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+
+}
+.layer1 {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+/*.layer1:hover {
+    background: blueviolet;
+}
+.layer1 h3 {
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 40px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer1:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+*/
