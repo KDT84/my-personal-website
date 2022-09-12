@@ -12,6 +12,12 @@
     background-size: cover;
     position: relative;
 }
+
+#front-logo {
+    height: 200px;
+    width: 200px;
+}
+
 /* display for the MENU*/  
 nav {
     display: flex;
@@ -157,8 +163,8 @@ nav img {
     cursor: pointer;
 }
 .intro-button:hover {
-    border: 1px solid pink;
-    background:yellow;
+    border: 2px solid pink;
+
     transition: 1s;
 }
 nav .fa { /*hiding the menu icom in bigger screens */
